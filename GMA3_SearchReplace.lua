@@ -112,7 +112,7 @@ local function main()
                     if (newCommand == "abort") then
                         goto abort
                     elseif newCommand ~= nil then
-                        Cmd("Set Macro "..searchObjects[i].no.."."..Commands[x].no.." \"command\"=\""..newCommand .."\"")
+                        Cmd("Set Macro "..searchObjects[i].no.."."..Commands[x].no.." \"command\"=\'"..newCommand .."\'")
                     end
 				end
             else
@@ -126,7 +126,7 @@ local function main()
                         if (newCommand == "abort") then
                             goto abort
                         elseif (newCommand ~= nil) then
-                            Cmd("Set Seq "..searchObjects[i].no.."."..Commands[x].name.." \"command\"=\""..newCommand .."\"")
+                            Cmd("Set Seq "..searchObjects[i].no.."."..Commands[x].name.." \"command\"=\'"..newCommand .."\'")
                         end
 					end
                 end
