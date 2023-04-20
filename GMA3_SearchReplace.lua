@@ -81,13 +81,11 @@ local function main()
 	)
 
 	-- print results:
-	Printf("Success = "..tostring(resultTable.success))
     local searchSelect=resultTable.selectors.Selector
-	Printf("Search in "..searchSelect)
     Printf("Search for "..resultTable.inputs.Search)
-	local searchString=resultTable.inputs.Search
-	Printf("Replace with = "..resultTable.inputs.replace)
-	local replaceString=resultTable.inputs.replace
+    local searchString=resultTable.inputs.Search
+    Printf("Replace with = "..resultTable.inputs.replace)
+    local replaceString=resultTable.inputs.replace
 
     -- search in Macros or Sequences
     if (searchSelect == 1) then
